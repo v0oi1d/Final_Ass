@@ -99,19 +99,8 @@ int main()
 	    }
     }
     
-
-    //calculating final bill
-    shmdt(proj);//detaching from shared memory
     fclose(menuFile);
     exit(EXIT_SUCCESS);
-
-    
-
- 
-
-
-
-
 
     return 0;
 }

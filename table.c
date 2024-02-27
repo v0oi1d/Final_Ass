@@ -35,6 +35,7 @@
 
         // Ask for the table number
         printf("Enter Table Number: ");
+        printf("\n");
         scanf("%d", &tableNumber);
 	key_t shared = ftok("waiter.c", tableNumber);
             int shmid = shmget(shared, 1024, 0666 | IPC_CREAT); // Printing the orders
@@ -49,7 +50,7 @@
             // Ask for the number of customers
             int orders[MAX_ORDERS]; // 1D array to store all orders
             int orderIndex = 0;     // Index for the orders array
-            printf("Enter Number of Customers at Table (maximum no. of customers can be %d): ", MAX_CUSTOMERS);
+            printf("Enter Number of Customers at Table (maximum no. of customers can be %d): or enter -1 \n", MAX_CUSTOMERS);
             scanf("%d", &numCustomers);
             if(numCustomers == -1){
             	proj[4]=1;
@@ -68,7 +69,7 @@
                 break;} 
             else if(numCustomers < 1 || numCustomers >5)
             {
-            printf("Customer number should be between 1 and 5, enter again: ");
+            printf("Customer number should be between 1 and 5, enter again: \n");
             scanf("%d", &numCustomers);
             continue;
             }
@@ -167,9 +168,9 @@
             sleep(1);
             printf("\nFinal bill is :%d\n", proj[2]); 
             proj[3]=0;
-            //shmdt(proj);
 
         }
+        shmdt(proj);
 
         fclose(menuFile);
         return 0;
