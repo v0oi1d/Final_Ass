@@ -23,7 +23,7 @@ int main()
         exit(1);
     }
 
-    // Initialize shared memory to 'N' for No
+    
     
     // Main admin loop
     while (1)
