@@ -1,0 +1,11 @@
+1. Veg Burger 30 INR
+2. Chicken Burger 40 INR
+3. Ostrich Eggs 25 INR
+4. Egg Frankie 300 INR
+5. RIshith Damani 70 INR
+6. Avaneesh 50 INR
+7. Gali 80 INR
+8. Anish 100 INR
+9. Kriti 35 INR
+
+

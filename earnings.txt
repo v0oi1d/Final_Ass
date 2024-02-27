@@ -1,0 +1,7 @@
+Earning from Table 2: 70 INR
+Earning from Table 1: 325 INR
+Earning from Table 2: 180 INR
+Earning from Table 1: 300 INR
+Total Earnings of Hotel: 875 INR
+Total Wages of Waiters: 350 INR
+Total Profit: 525 INR
