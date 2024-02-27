@@ -79,4 +79,11 @@ int main()
     printf("Total Earnings of Hotel: %d INR\n", totalearnings);
     printf("Total Wages of Waiters: %d INR\n", wages);
     printf("Total Profit: %d INR\n", profit);
+    
+    shmdt(shm_ptr); //Detach shared memory segment for admin and hotel manager
+    
+    for (int i = 0; i < noTables; i++) {
+    shmdt(status_array[i]); // Detach shared memory segment for waiter and hotel manager
+    
+}
 }
